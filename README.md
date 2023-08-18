@@ -137,4 +137,4 @@ The analysis results will be stored as a JSON file in the Results folder. The re
 }
 ```
 ## Support/Feedback
-For issues with, questions about, or feedback for CASUAL, please contact us at our [email](hello@insidersecurity.co).
+For issues with, questions about, or feedback for CASUAL, please [contact us](https://insidersecurity.co/) or send an email to hello@insidersecurity.co.
