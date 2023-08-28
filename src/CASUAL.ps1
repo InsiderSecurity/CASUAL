@@ -65,6 +65,12 @@ $end_time_for_filepath = $start_time.replace(":", "")
 $start_date_for_filepath = $StartDate.replace("/","")
 $end_date_for_filepath = $EndDate.replace("/","")
 
+$results_folder_path = Join-Path -Path $present_file_path -ChildPath "Results"
+
+if(!(Test-Path $results_folder_path)){
+    New-Item -ItemType Directory -Path $results_folder_path
+}
+
 $result_filename = "{0}_{1}-{2}_{3}_{4}_{5}_Results.json" -f $start_date_for_filepath,$start_time_for_filepath,$end_date_for_filepath,$end_time_for_filepath,$ops,$analyze
 $result_full_path = Join-Path -Path $present_file_path -ChildPath "Results" | Join-Path -ChildPath $result_filename
 
