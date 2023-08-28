@@ -26,6 +26,7 @@ Install-Module ExchangeOnlineManagement
 </ol>
 
 ## Usage
+cd to `src` folder and run:
 
 ```bash
 ./src/CASUAL.ps1 -ops [ADLogin|OD_Access|SP_Access|EXO_Access] -analyze [AppID|IP] -days [1-90] -start_time <"8:00AM"> -end_time <"8:00AM">
